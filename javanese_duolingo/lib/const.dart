@@ -7,3 +7,5 @@ const Color BUTTON_KUNING = Color(0xffFEC701);
 const Color BUTTON_KUNING_BACKDROP = Color(0xffEB8C00);
 const Color DIVIDER = Color(0xff3A454E);
 const Color KEY_PHRASES = Color(0xffDAA25B);
+const Color MAGNIFIER = Color(0xffCBCBCB);
+const Color TITLE = Color(0xff55646C);

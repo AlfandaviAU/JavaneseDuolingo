@@ -3,7 +3,8 @@ import "package:javanese_duolingo/const.dart" as Konstanta;
 
 class Button extends StatelessWidget {
   late String text1;
-  Button({super.key, required this.text1});
+  late String path;
+  Button({super.key, required this.text1, this.path = ""});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,11 @@ class Button extends StatelessWidget {
           ),
         ),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            if (path != "") {
+              Navigator.pushNamed(context, path);
+            }
+          },
           style: ElevatedButton.styleFrom(
             minimumSize: const Size(394, 43.202),
             // elevation: 10,

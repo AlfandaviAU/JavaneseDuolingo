@@ -46,7 +46,7 @@ Padding mistakes_header() {
           ),
         ),
         Image.asset(
-          "assets/headers/Reference.png",
+          "assets/headers/reference.png",
           width: 100,
           height: 100,
         ),
