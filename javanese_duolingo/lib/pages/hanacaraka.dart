@@ -41,35 +41,55 @@ class Hanacaraka extends StatelessWidget {
         ),
         child: navbar(context),
       ),
-      body: Column(children: [
+      body: Stack(children: [
         Padding(
-          padding: EdgeInsets.fromLTRB(27, 27, 27, 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Center(
-                child: Text("Let’s learn Hanacaraka! ",
-                    style: TextStyle(
-                      fontFamily: "DIN Bold",
-                      color: Colors.white,
-                      fontSize: 25,
-                    )),
-              ),
-              Center(
-                child: Text(
-                  "Get to know the main writing system in Javanese",
-                  style: TextStyle(
-                    fontFamily: "DIN Regular",
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ],
+          padding: const EdgeInsets.fromLTRB(0, 250, 0, 0),
+          child: Image.asset(
+            "assets/components/frame_hanacaraka_1.png",
+            width: 428,
+            height: 388,
           ),
         ),
+        BackgroundBatikHanacaraka(),
+        Column(children: [
+          HeaderHanacaraka(),
+          TipsHanacaraka(),
+        ]),
+      ]),
+    );
+  }
+}
+
+class BackgroundBatikHanacaraka extends StatelessWidget {
+  const BackgroundBatikHanacaraka({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 430,
+      height: 1000,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/batik/Batik4.png"),
+          fit: BoxFit.cover,
+          opacity: 0.05,
+        ),
+      ),
+    );
+  }
+}
+
+class TipsHanacaraka extends StatelessWidget {
+  const TipsHanacaraka({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
         SizedBox(
           height: 10,
         ),
@@ -93,12 +113,45 @@ class Hanacaraka extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        Image.asset(
-          "assets/components/frame_hanacaraka_1.png",
-          width: 428,
-          height: 388,
-        ),
-      ]),
+      ],
+    );
+  }
+}
+
+class HeaderHanacaraka extends StatelessWidget {
+  const HeaderHanacaraka({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.fromLTRB(27, 27, 27, 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text("Let’s learn Hanacaraka! ",
+                style: TextStyle(
+                  fontFamily: "DIN Bold",
+                  color: Colors.white,
+                  fontSize: 25,
+                )),
+          ),
+          Center(
+            child: Text(
+              "Get to know the main writing system in Javanese",
+              style: TextStyle(
+                fontFamily: "DIN Regular",
+                color: Colors.white,
+                fontSize: 20,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
