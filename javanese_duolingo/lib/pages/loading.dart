@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:javanese_duolingo/const.dart' as Konstanta;
@@ -13,6 +14,9 @@ class Loading extends StatefulWidget {
 class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
+    Timer(Duration(seconds: 2), () {
+      Navigator.pushNamed(context, "/learning");
+    });
     return Scaffold(
       backgroundColor: Konstanta.BACKGROUND_COLOR,
       body: SafeArea(

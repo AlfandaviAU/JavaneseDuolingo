@@ -4,11 +4,13 @@ import 'package:javanese_duolingo/const.dart' as Konstanta;
 class Button_with_no extends StatelessWidget {
   late String text1;
   late String text2;
+  late String routing;
 
   Button_with_no({
     super.key,
     required this.text1,
     required this.text2,
+    this.routing = "",
   });
 
   @override
@@ -33,7 +35,11 @@ class Button_with_no extends StatelessWidget {
             ),
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              if (routing != "") {
+                Navigator.pushNamed(context, routing);
+              }
+            },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(394, 43.202),
               // elevation: 10,

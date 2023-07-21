@@ -37,6 +37,7 @@ class DailyReview extends StatelessWidget {
                   colorText: Color(0xff3520CC),
                   width: 155,
                   height: 50,
+                  routing: "/loading",
                 ),
               )
             ],

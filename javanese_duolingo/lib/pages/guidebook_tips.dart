@@ -44,6 +44,7 @@ class GuidebookTips extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(
                     0, 37, 0, 0), // Add margin as needed
                 child: Button_with_no(
+                  routing: "/mistakes",
                   text1: "REVIEW THIS UNIT",
                   text2: "RETURN TO HOME",
                 ),

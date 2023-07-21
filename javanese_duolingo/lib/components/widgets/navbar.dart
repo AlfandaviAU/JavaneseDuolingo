@@ -8,11 +8,11 @@ import 'package:javanese_duolingo/components/widgets/button_custom.dart';
 
 Container navbar(BuildContext context) {
   List<String> routeNames = [
-    "/home",
+    "/",
     "/hanacaraka",
-    "/chest",
+    "/goals",
     "/daily_review",
-    "/achievement",
+    "/achievements",
     "/profile",
   ];
 
