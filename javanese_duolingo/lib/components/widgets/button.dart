@@ -29,7 +29,7 @@ class Button extends StatelessWidget {
         ElevatedButton(
           onPressed: () {
             if (path != "") {
-              Navigator.pushNamed(context, path);
+              Navigator.pushNamed(context, "/");
             }
           },
           style: ElevatedButton.styleFrom(

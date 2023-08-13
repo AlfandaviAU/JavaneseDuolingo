@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:javanese_duolingo/const.dart' as Konstanta;
-import 'package:javanese_duolingo/components/widgets/friends_singular.dart';
 import 'package:javanese_duolingo/components/widgets/friends_follow.dart';
 
 class friends_single extends StatelessWidget {
@@ -23,7 +22,6 @@ class friends_single extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(14, 16, 10, 16),
       child: InkWell(
         onTap: () {
-          // print(redirect);
           Navigator.pushNamed(context, redirect);
         },
         child: Row(

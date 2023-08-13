@@ -268,7 +268,7 @@ class _LanguageState extends State<Language> {
                     0, 37, 0, 0), // Add margin as needed
                 child: Button(
                   text1: "CONTINUE",
-                  path: "/home",
+                  path: "/",
                 ),
               ),
             ),

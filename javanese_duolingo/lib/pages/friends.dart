@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:javanese_duolingo/components/widgets/button_custom.dart';
-import 'package:javanese_duolingo/components/widgets/friends_follow.dart';
 import 'package:javanese_duolingo/const.dart' as Konstanta;
-import 'package:javanese_duolingo/components/widgets/friends_singular.dart';
 
 import '../components/methods/friends.dart';
 
