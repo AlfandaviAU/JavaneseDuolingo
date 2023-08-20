@@ -122,7 +122,9 @@ class ClickableAppBar extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/super");
+            },
             child: Image.asset(
               'assets/components/headers/duo.png',
               width: 55,

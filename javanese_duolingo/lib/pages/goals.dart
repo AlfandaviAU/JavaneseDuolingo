@@ -65,8 +65,8 @@ class Goals extends StatelessWidget {
             children: [
               Image.asset(
                 "assets/components/frame_goals_2.png",
-                width: 428,
-                height: 1275,
+                // width: 500,
+                // height: 800,
               ),
             ],
           ),

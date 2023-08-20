@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:javanese_duolingo/components/widgets/button_custom.dart';
+import 'package:javanese_duolingo/components/widgets/button_follow.dart';
 import 'package:javanese_duolingo/const.dart' as Konstanta;
 import 'package:javanese_duolingo/components/widgets/friends_singular.dart';
 
@@ -59,13 +60,11 @@ class friends_follow extends StatelessWidget {
               const SizedBox(
                 height: 35,
               ),
-              ButtonCustom(
-                text1: "FOLLOW",
-                colorBase: Konstanta.BUTTON_KUNING,
-                colorBackdrop: Konstanta.BUTTON_KUNING_BACKDROP,
-                colorText: Colors.black,
+              ButtonFollow(
                 width: 133.906,
                 height: 38.259,
+                imagePath: path,
+                imageName: name,
               ),
             ]),
             Align(

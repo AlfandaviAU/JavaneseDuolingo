@@ -72,7 +72,7 @@ class _LoadingState extends State<Loading> {
                       horizontal: 42,
                     ),
                     child: Text(
-                      "Slametan diadakan hampir setiap kesem patan yang memiliki arti upacara bagi orang Jawa, seperti kehamilan, perkawinan, kematian, maulid, lebaran, panen, dan lain-lain. Slametan bertujuan untuk mencari tujuan selamat, tidak terganggu kesulitan apapun.",
+                      "Slametan merupakan serangkaian upacara dan pemberian makanan kepada tamu sebagai bentuk penghormatan pada acara penting seperti kehamilan, perkawinan",
                       style: TextStyle(
                         fontFamily: "DIN Regular",
                         color: Colors.white,

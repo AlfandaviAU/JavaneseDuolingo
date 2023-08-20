@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:javanese_duolingo/pages/hanacaraka.dart';
+import 'pages/duolingo_super.dart';
 import 'pages/goals.dart';
 import 'pages/profile.dart';
 import 'pages/daily_review.dart';
@@ -47,5 +48,6 @@ void main() => runApp(MaterialApp(
         "/streak": (context) => Streak(),
         "/advanced_league": (context) => AdvancedLeague(),
         "/jump_ahead": (context) => JumpAhead(),
+        "/super": (context) => DuolingoSuper(),
       },
     ));
