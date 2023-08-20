@@ -11,6 +11,11 @@ class Hanacaraka extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 0;
+    void updateSelectedIndex(int newIndex) {
+      selectedIndex = newIndex;
+    }
+
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -35,12 +40,11 @@ class Hanacaraka extends StatelessWidget {
       ),
       backgroundColor: Konstanta.BACKGROUND_COLOR,
       bottomNavigationBar: Theme(
-        data: ThemeData(
-          canvasColor:
-              Konstanta.BACKGROUND_COLOR, // Set the background color to black
-        ),
-        child: navbar(context),
-      ),
+          data: ThemeData(
+            canvasColor:
+                Konstanta.BACKGROUND_COLOR, // Set the background color to black
+          ),
+          child: navbar(context, 1)),
       body: Stack(children: [
         Padding(
           padding: const EdgeInsets.fromLTRB(0, 250, 0, 0),

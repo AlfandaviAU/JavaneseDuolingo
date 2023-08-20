@@ -11,6 +11,11 @@ class Mistakes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 0;
+    void updateSelectedIndex(int newIndex) {
+      selectedIndex = newIndex;
+    }
+
     return Scaffold(
       backgroundColor: Konstanta.BACKGROUND_COLOR,
       appBar: AppBar(
@@ -18,12 +23,11 @@ class Mistakes extends StatelessWidget {
         backgroundColor: Konstanta.BACKGROUND_COLOR,
       ),
       bottomNavigationBar: Theme(
-        data: ThemeData(
-          canvasColor:
-              Konstanta.BACKGROUND_COLOR, // Set the background color to black
-        ),
-        child: navbar(context),
-      ),
+          data: ThemeData(
+            canvasColor:
+                Konstanta.BACKGROUND_COLOR, // Set the background color to black
+          ),
+          child: navbar(context, 3)),
       body: Stack(
         children: [
           Container(

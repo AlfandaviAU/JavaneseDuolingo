@@ -52,12 +52,11 @@ class Setting extends StatelessWidget {
       ),
       backgroundColor: Konstanta.BACKGROUND_COLOR,
       bottomNavigationBar: Theme(
-        data: ThemeData(
-          canvasColor:
-              Konstanta.BACKGROUND_COLOR, // Set the background color to black
-        ),
-        child: navbar(context),
-      ),
+          data: ThemeData(
+            canvasColor:
+                Konstanta.BACKGROUND_COLOR, // Set the background color to black
+          ),
+          child: navbar(context, 4)),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(

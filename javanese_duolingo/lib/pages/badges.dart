@@ -62,7 +62,7 @@ class Badges extends StatelessWidget {
           canvasColor:
               Konstanta.BACKGROUND_COLOR, // Set the background color to black
         ),
-        child: navbar(context),
+        child: navbar(context, 2),
       ),
       body: Container(
         color: Konstanta.BACKGROUND_COLOR,

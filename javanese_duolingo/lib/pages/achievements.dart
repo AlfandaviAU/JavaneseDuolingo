@@ -15,7 +15,7 @@ class Achievements extends StatelessWidget {
           canvasColor:
               Konstanta.BACKGROUND_COLOR, // Set the background color to black
         ),
-        child: navbar(context),
+        child: navbar(context, 4),
       ),
       body: Container(
         margin: const EdgeInsets.fromLTRB(0, 50, 0, 0),

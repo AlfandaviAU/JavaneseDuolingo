@@ -11,6 +11,11 @@ class Feed extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 0;
+    void updateSelectedIndex(int newIndex) {
+      selectedIndex = newIndex;
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -35,12 +40,11 @@ class Feed extends StatelessWidget {
       ),
       backgroundColor: Konstanta.BACKGROUND_COLOR,
       bottomNavigationBar: Theme(
-        data: ThemeData(
-          canvasColor:
-              Konstanta.BACKGROUND_COLOR, // Set the background color to black
-        ),
-        child: navbar(context),
-      ),
+          data: ThemeData(
+            canvasColor:
+                Konstanta.BACKGROUND_COLOR, // Set the background color to black
+          ),
+          child: navbar(context, 0)),
       body: Container(
         child: SingleChildScrollView(
           child: Stack(children: [

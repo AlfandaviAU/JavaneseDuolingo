@@ -10,6 +10,11 @@ class DailyReview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 0;
+    void updateSelectedIndex(int newIndex) {
+      selectedIndex = newIndex;
+    }
+
     return Scaffold(
       // extendBodyBehindAppBar: true,
       backgroundColor: Konstanta.BACKGROUND_COLOR,
@@ -45,12 +50,11 @@ class DailyReview extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Theme(
-        data: ThemeData(
-          canvasColor:
-              Konstanta.BACKGROUND_COLOR, // Set the background color to black
-        ),
-        child: navbar(context),
-      ),
+          data: ThemeData(
+            canvasColor:
+                Konstanta.BACKGROUND_COLOR, // Set the background color to black
+          ),
+          child: navbar(context, 3)),
 
       body: SafeArea(
         child: Stack(children: [

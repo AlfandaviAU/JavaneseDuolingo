@@ -35,12 +35,11 @@ class _HomeState extends State<Home> {
         ),
       ),
       bottomNavigationBar: Theme(
-        data: ThemeData(
-          canvasColor:
-              Konstanta.BACKGROUND_COLOR, // Set the background color to black
-        ),
-        child: navbar(context),
-      ),
+          data: ThemeData(
+            canvasColor:
+                Konstanta.BACKGROUND_COLOR, // Set the background color to black
+          ),
+          child: navbar(context, 0)),
       backgroundColor: Konstanta.BACKGROUND_COLOR,
       body: SingleChildScrollView(
         child: Stack(children: [
@@ -57,8 +56,8 @@ class _HomeState extends State<Home> {
                   children: [
                     Image.asset(
                       'assets/components/headers/main.png',
-                      width: 348,
-                      height: 668,
+                      // width: 393,
+                      // height: 852,
                     ),
                   ],
                 ),
@@ -85,11 +84,11 @@ class _HomeState extends State<Home> {
           ),
           const BatikBackground(),
           const Padding(
-            padding: EdgeInsets.fromLTRB(0, 680, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 900, 0, 0),
             child: Unit3(),
           ),
           const Padding(
-            padding: EdgeInsets.fromLTRB(0, 1450, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 1700, 0, 0),
             child: JumpAheadWidget(),
           ),
           if (condSuper) DropdownSuper(),
