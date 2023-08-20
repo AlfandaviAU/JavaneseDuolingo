@@ -81,26 +81,9 @@ class Profile extends StatelessWidget {
                     Image.asset(
                       "assets/headers/frame_profile.png",
                       width: 365.51,
-                      height: 1095.26,
+                      height: 800.26,
                     ),
                   ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(22, 1305, 0, 0),
-                  child: InkWell(
-                    onTap: () {
-                      print("INKWELL");
-                    },
-                    child: ButtonCustom(
-                      text1: "VISIT US",
-                      colorBase: Konstanta.BUTTON_KUNING,
-                      colorBackdrop: Konstanta.BUTTON_KUNING_BACKDROP,
-                      colorText: Colors.black,
-                      width: 135,
-                      height: 43,
-                      isDuolingo: "true",
-                    ),
-                  ),
                 ),
               ],
             ),

@@ -16,14 +16,7 @@ class DuolingoSuper extends StatelessWidget {
         child: AppBar(
           elevation: 0,
           centerTitle: true,
-          automaticallyImplyLeading: false, // Disable default back button
-          leading: IconButton(
-            // Add a custom back button
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.of(context).pop(); // Go back to the previous screen
-            },
-          ),
+          automaticallyImplyLeading: true, // Disable default back button
           flexibleSpace: Stack(
             children: [
               Container(

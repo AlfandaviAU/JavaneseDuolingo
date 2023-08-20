@@ -16,7 +16,7 @@ class JumpAhead extends StatelessWidget {
         child: AppBar(
           elevation: 0,
           centerTitle: true,
-          automaticallyImplyLeading: false,
+          automaticallyImplyLeading: true,
           flexibleSpace: Stack(
             children: [
               Container(
@@ -27,11 +27,17 @@ class JumpAhead extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(20, 700, 0, 0),
-                child: Button_with_no(
-                  text1: "CONTINUE",
-                  text2: "NO THANKS",
-                  routing: "/guidebook",
+                padding: const EdgeInsets.fromLTRB(20, 700, 0, 0),
+                child: Column(
+                  children: [
+                    Button_with_no(
+                      text1: "START EXAM",
+                      text2: "READ GUIDEBOOK",
+                      routing: "/learning",
+                      routing2: "/guidebook",
+                    ),
+                    const SizedBox(height: 20), // Add spacing
+                  ],
                 ),
               ),
             ],

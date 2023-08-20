@@ -86,6 +86,14 @@ class Unit3 extends StatelessWidget {
 }
 
 class ClickableAppBar extends StatelessWidget {
+  final bool condSuper;
+  final VoidCallback onDuoLogoTap;
+
+  ClickableAppBar({
+    required this.condSuper,
+    required this.onDuoLogoTap,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -122,9 +130,11 @@ class ClickableAppBar extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: () {
-              Navigator.pushNamed(context, "/super");
-            },
+            // onTap: () {
+            //   // set
+            //   Navigator.pushNamed(context, "/super");
+            // },
+            onTap: onDuoLogoTap,
             child: Image.asset(
               'assets/components/headers/duo.png',
               width: 55,

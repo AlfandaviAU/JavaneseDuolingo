@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:javanese_duolingo/const.dart' as Konstanta;
 import 'package:javanese_duolingo/components/widgets/friends_follow.dart';
+import 'package:share_plus/share_plus.dart';
 
 class friends_single extends StatelessWidget {
   String text1;
   String text2;
   String path;
   String redirect;
+  String mode;
 
   friends_single({
     super.key,
@@ -14,6 +16,7 @@ class friends_single extends StatelessWidget {
     required this.text2,
     required this.path,
     required this.redirect,
+    this.mode = "",
   });
 
   @override
@@ -22,7 +25,7 @@ class friends_single extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(14, 16, 10, 16),
       child: InkWell(
         onTap: () {
-          Navigator.pushNamed(context, redirect);
+          Share.share('Check out my badges!', subject: 'Share your badges!');
         },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

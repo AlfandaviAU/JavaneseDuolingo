@@ -11,3 +11,4 @@ const Color DIVIDER = Color(0xff3A454E);
 const Color KEY_PHRASES = Color(0xffDAA25B);
 const Color MAGNIFIER = Color(0xffCBCBCB);
 const Color TITLE = Color(0xff55646C);
+const Color TEKS_BIRU = Color(0xff6BBDF3);

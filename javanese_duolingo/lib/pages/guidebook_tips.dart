@@ -47,6 +47,7 @@ class GuidebookTips extends StatelessWidget {
                   routing: "/mistakes",
                   text1: "REVIEW THIS UNIT",
                   text2: "RETURN TO HOME",
+                  routing2: "/",
                 ),
               ),
             ),

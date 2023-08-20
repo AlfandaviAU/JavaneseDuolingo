@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:javanese_duolingo/components/widgets/dropdown_duolingo_super.dart';
 
 import 'package:javanese_duolingo/components/widgets/navbar.dart';
 import 'package:javanese_duolingo/const.dart' as Konstanta;
@@ -13,6 +14,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  bool condSuper = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +24,14 @@ class _HomeState extends State<Home> {
         backgroundColor: Konstanta.BACKGROUND_COLOR_2,
         automaticallyImplyLeading: false,
         title: Center(
-          child: ClickableAppBar(), // Align the ClickableAppBar in the middle
+          child: ClickableAppBar(
+            condSuper: condSuper,
+            onDuoLogoTap: () {
+              setState(() {
+                condSuper = !condSuper;
+              });
+            },
+          ), // Align the ClickableAppBar in the middle
         ),
       ),
       bottomNavigationBar: Theme(
@@ -82,6 +92,7 @@ class _HomeState extends State<Home> {
             padding: EdgeInsets.fromLTRB(0, 1450, 0, 0),
             child: JumpAheadWidget(),
           ),
+          if (condSuper) DropdownSuper(),
         ]),
       ),
     );

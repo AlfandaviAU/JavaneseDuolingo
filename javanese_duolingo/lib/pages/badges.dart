@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:javanese_duolingo/components/widgets/button.dart';
 import 'package:javanese_duolingo/const.dart' as Konstanta;
 import 'package:javanese_duolingo/components/widgets/button_custom.dart';
 import 'package:javanese_duolingo/components/widgets/navbar.dart';
+import 'package:share/share.dart';
 
 import '../components/methods/friends.dart';
 
@@ -116,6 +118,7 @@ class Badges extends StatelessWidget {
                               text2: "Share to your friends on Duolingo",
                               path: "assets/friends/Find Contacts.png",
                               redirect: "/",
+                              mode: "contacts",
                             ),
                             const Divider(
                               thickness: 3,
@@ -126,6 +129,7 @@ class Badges extends StatelessWidget {
                               text2: "Upload your badge collections",
                               path: "assets/friends/Connect to facebook.png",
                               redirect: "/",
+                              mode: "facebook",
                             ),
                             const Divider(
                               thickness: 3,
@@ -136,6 +140,7 @@ class Badges extends StatelessWidget {
                               text2: "Learn together with friends",
                               path: "assets/friends/ticket.png",
                               redirect: "/",
+                              mode: "instagram",
                             ),
                           ],
                         ),

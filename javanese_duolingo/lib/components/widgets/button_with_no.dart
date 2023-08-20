@@ -5,12 +5,14 @@ class Button_with_no extends StatelessWidget {
   late String text1;
   late String text2;
   late String routing;
+  late String routing2;
 
   Button_with_no({
     super.key,
     required this.text1,
     required this.text2,
     this.routing = "",
+    this.routing2 = "",
   });
 
   @override
@@ -64,7 +66,11 @@ class Button_with_no extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-            Navigator.pop(context);
+            if (routing2 != "") {
+              Navigator.pushNamed(context, routing2);
+            } else {
+              Navigator.pop(context);
+            }
           },
           child: Text(
             text2,
